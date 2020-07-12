@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+
+<body>
+    {% block header %}
+    <header class="header">
+        <nav class="header-nav">
+            <div class="header-div">
+                <ul class="header-list">
+                    <li class="header-li"> <a href="{% url 'direccion de url' %}"></a> Menu1 </li>
+                    <li class="header-li"> <a href="{% url 'direccion de url' %}"></a> Menu2 </li>
+                    <li class="header-li"> <a href="{% url 'direccion de url' %}"></a> Menu3 </li>
+                    <li class="header-li"> <a href="{% url 'direccion de url' %}"></a> Menu4 </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    {% endblock %}
+    {% block main %}
+    <main class="body">
+        <section class="body-section">
+            <div class="body-div">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="body-div">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            </div>
+        </section>
+    </main>
+    {% endblock %}
+    {% block article %}
+    <article class="publicity">
+        <div class="publicity-div">
+            <ul class="publicity-ul">
+                <li><a href="{% url 'direccion de urls' %}"></a>Algo </li>
+                <li><a href="{% url 'direccion de urls' %}"></a>Algo1 </li>
+                <li><a href="{% url 'direccion de urls' %}"></a>Algo2 </li>
+                <li><a href="{% url 'direccion de urls' %}"></a>Algo3 </li>
+                <li><a href="{% url 'direccion de urls' %}"></a>Algo4 </li>
+                <li><a href="{% url 'direccion de urls' %}"></a>Algo5 </li>
+            </ul>
+        </div>
+    </article>
+    {% endblock %}
+    <footer class="foter">
+        <div class="foter-div">
+            <ul class="foter-ul">
+                <li class="foter-li"><a href="{% url 'direccionde urls' %}"></a> Menu 1 </li>
+                <li class="foter-li"><a href="{% url 'direccionde urls' %}"></a> Menu 2 </li>
+                <li class="foter-li"><a href="{% url 'direccionde urls' %}"></a> Menu 3 </li>
+                <li class="foter-li"><a href="{% url 'direccionde urls' %}"></a> Menu 4 </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

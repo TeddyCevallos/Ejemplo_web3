@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        {% block header %}
+        {% endblock %}
+        {% block main %}
+        <form class="register" action="index.html" method="post">
+            <div class="register-div">
+                <label for="">First Name</label>
+                <input type="text" name="username" value="" placeholder="User Namer">
+                <label for="">Last Name</label>
+                <input type="text" name="username" value="" placeholder="Last Namer">
+                <label for="">Email</label>
+                <input type="text" name="email" value="" placeholder="Email">
+                <label for="">Password</label>
+                <input type="text" name="password" value="" placeholder="Password">
+                <label for="">Confirm Password</label>
+                <input type="text" name="password" value="" placeholder="Confirm password">
+
+            </div>
+        </form>
+
+        {% endblock %}
+        {% block article %}
+        {% endblock %}
+        {% block foter  %}
+        {% endblock %}
+    </body>
+</html>

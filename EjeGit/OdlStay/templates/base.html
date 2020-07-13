@@ -5,6 +5,9 @@
 <head>
     <meta charset="utf-8">
     <title>{% block title %}{% endblock %}</title>
+    {% block meta %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    {% endblock %}
 </head>
 
 <body>
@@ -13,10 +16,10 @@
         <nav class="header-nav">
             <div class="header-div">
                 <ul class="header-list">
-                    <li class="header-li"> <a href="{% url 'direccion de url' %}"></a> Menu1 </li>
-                    <li class="header-li"> <a href="{% url 'direccion de url' %}"></a> Menu2 </li>
-                    <li class="header-li"> <a href="{% url 'direccion de url' %}"></a> Menu3 </li>
-                    <li class="header-li"> <a href="{% url 'direccion de url' %}"></a> Menu4 </li>
+                    <li class="header-li"> <a href=""></a> Menu1 </li>
+                    <li class="header-li"> <a href=""></a> Menu2 </li>
+                    <li class="header-li"> <a href=""></a> Menu3 </li>
+                    <li class="header-li"> <a href=""></a> Menu4 </li>
                 </ul>
             </div>
         </nav>
@@ -40,26 +43,27 @@
     <article class="publicity">
         <div class="publicity-div">
             <ul class="publicity-ul">
-                <li><a href="{% url 'direccion de urls' %}"></a>Algo </li>
-                <li><a href="{% url 'direccion de urls' %}"></a>Algo1 </li>
-                <li><a href="{% url 'direccion de urls' %}"></a>Algo2 </li>
-                <li><a href="{% url 'direccion de urls' %}"></a>Algo3 </li>
-                <li><a href="{% url 'direccion de urls' %}"></a>Algo4 </li>
-                <li><a href="{% url 'direccion de urls' %}"></a>Algo5 </li>
+                <li><a href=""></a>Algo </li>
+                <li><a href=""></a>Algo1 </li>
+                <li><a href=""></a>Algo2</li>
+                <li><a href=""></a>Algo3 </li>
+                <li><a href=""></a>Algo4 </li>
             </ul>
         </div>
     </article>
     {% endblock %}
+    {% block foter %}
     <footer class="foter">
         <div class="foter-div">
             <ul class="foter-ul">
-                <li class="foter-li"><a href="{% url 'direccionde urls' %}"></a> Menu 1 </li>
-                <li class="foter-li"><a href="{% url 'direccionde urls' %}"></a> Menu 2 </li>
-                <li class="foter-li"><a href="{% url 'direccionde urls' %}"></a> Menu 3 </li>
-                <li class="foter-li"><a href="{% url 'direccionde urls' %}"></a> Menu 4 </li>
+                <li class="foter-li"><a href=""></a> Menu 1 </li>
+                <li class="foter-li"><a href=""></a> Menu 2 </li>
+                <li class="foter-li"><a href=""></a> Menu 3 </li>
+                <li class="foter-li"><a href=""></a> Menu 4 </li>
             </ul>
         </div>
     </footer>
+    {% endblock %}
 </body>
 
 </html>

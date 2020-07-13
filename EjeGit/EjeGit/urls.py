@@ -21,6 +21,6 @@ from OdlStay import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index),
-    path('',login, login.as_view(), name = 'login'),
+    path('login/',login, name = 'login'),
     path('logout/',do_logout, name = 'logout'),
 ]

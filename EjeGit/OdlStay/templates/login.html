@@ -26,14 +26,11 @@
     {% endif %}
     {% endif %}
 
-    <form method="post" action="{% url 'login' %}">
+    <form class="input" method="post" action="{% url 'login' %}">
         {% csrf_token %}
-        <div class="form-div">
+        <div class="input-div">
             <label for="">Nombre Usuario</label>
             <input type="text" name="username" value="" placeholder="Nombre Usuario">
-        </div>
-
-        <div class="form-div">
             <label for="">Contraseña</label>
             <input type="text" name="password" value="" placeholder="Contraseña">
         </div>

@@ -1,14 +1,51 @@
 * {
     margin: auto;
     padding: auto;
-    background-color: rgb(44,45,51);
-    color: #fff;
 }
 .header{
-    border: 2px solid rgb(128,28,167);
 }
 
+/* formulario o registro, login*/
+
 .register{
-    border: 2px solid rgb(128,28,167);
-    
+    width: 99.8%;
+    height: 630px;
+    background-color: rgba(0,0,0,.7);
+    border: 1px solid rgba(0,0,0,.7);
+}
+
+.register img{
+    width: 75px;
+    height: 75px;
+    margin: 15px 0 0 15px;
+    float: left;
+    border-radius: 15px;
+}
+.register-form{
+    width: 35%;
+    height: auto;
+    margin-top: 10%;
+    text-align: center;
+    background-color: rgb(255,252,252);
+    border: 5px solid rgb(104,190,51);
+    border-radius: 25px;
+}
+
+.register-form label, h2{
+    width: 50%;
+    padding:10px 10px 3px;
+    display: block;
+}
+
+.register-form button,.register-form a{
+    padding: 10px 15px;
+    margin: 15px;
+    border: 2px solid rgb(32,193,43);
+    border-radius: 15px;
+    text-decoration: none;
+}
+.register-form h2,.register-form label,.register-form button,.register-form a{
+    font-family: "time new romans";
+    font-style: oblique;
+    color: rgb(0,0,0);
 }

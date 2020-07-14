@@ -8,26 +8,33 @@
 </head>
 
 <body>
+
     {% block header %}
     {% endblock %}
+
     {% block main %}
-    {% if form.errors %}
-    <p>Your username and password didn't match. Please try again.</p>
-    {% endif %}
+    <main class="register">
+        <a href="/">
+            <img src="https://i.pinimg.com/564x/34/ca/a2/34caa282cbdea9f981bff5a71b1ea5f3.jpg" alt="">
+        </a>
+        <form class="register-form" method="POST">
+            <h2>Login</h2>
+            <label for="">
+                {{ form.as_p }}
+            </label>
+            {% csrf_token %}
+            <button type="submit">Login</button>
+            <a href="{% url 'form' %}">Register</a>
+        </form>
+    </main>
+    {% endblock %}
 
-    {% if next %}
-    {% if user.is_authenticated %}
+    {% block article %}
+    {% endblock %}
 
-    <p>Your account doesn't have access to this page. To proceed,
-        please login with an account that has access.</p>
-
-    {% else %}
-    <p>Please login to see this page.</p>
-    {% endif %}
-    {% endif %}
-
-    <form class="input" method="post" action="{% url 'login' %}">
-        {% csrf_token %}
+    {% block foter  %}
+    {% endblock %}
+    <!--
         <div class="input-div">
             <label for="">Nombre Usuario</label>
             <input type="text" name="username" value="" placeholder="Nombre Usuario">
@@ -35,7 +42,6 @@
             <input type="text" name="password" value="" placeholder="Contraseña">
         </div>
         <button type="submit" name="button">Iniciar Secion</button>
-<!--
         <div>
             <td>{{ form.username.label_tag }}</td>
             <td>{{ form.username }}</td>
@@ -50,13 +56,7 @@
             <input type="hidden" name="next" value="{{ next }}" />
         </div>
     -->
-    </form>
 
-    {% endblock %}
-    {% block article %}
-    {% endblock %}
-    {% block foter  %}
-    {% endblock %}
 </body>
 
 </html>
